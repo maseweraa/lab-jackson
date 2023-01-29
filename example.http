@@ -1,0 +1,31 @@
+# <method> <url> <version>
+# <headers>
+# <empty line>
+GET, POST, PUT, DELETE, PATCH
+# <body>
+
+### query param
+GET http://google.com?name=asd&version=1&anotherQueryParam=true
+Accept: application/json, application/xml
+
+
+### path param/path variable
+GET http://google.com/{someId}
+
+###
+POST http://google.com/{someId}
+Content-Type: application/json
+
+{
+  "firstName": "Marcel",
+  "lastName": "Seweryn",
+  "address": {
+    "buildingNumber": 13
+  },
+  "exampleArray": [
+    "test",
+    13,
+    {
+    }
+  ]
+}
